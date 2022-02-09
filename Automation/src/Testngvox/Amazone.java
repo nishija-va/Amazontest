@@ -1,13 +1,13 @@
 package Testngvox;
 
+import java.util.Set;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -33,7 +33,7 @@ if(browser.equalsIgnoreCase("chrome"))
 	
 else if(browser.equalsIgnoreCase("edge"))
 {
-	System.setProperty("webdriver.edge.driver","C:\\Users\\nishija\\Desktop\\selenium\\Edge 97\\edgedriver_win64\\msedgedriver.exe");
+	System.setProperty("webdriver.edge.driver","C:\\Users\\nishija\\Desktop\\selenium\\edge 98\\edgedriver_win64\\msedgedriver.exe");
 	driver=new EdgeDriver();
 	driver.manage().window().maximize();
 	  driver.get(s);
@@ -73,6 +73,22 @@ else if(browser.equalsIgnoreCase("edge"))
 	s.sendKeys("mobiles");
 	s.submit();
 }
+ @Test(priority = 4 )
+ public void mob() throws InterruptedException
+ {
+	 driver.findElement(By.xpath("//*[text()=\"Samsung Galaxy M52 5G (ICY Blue, 6GB RAM, 128GB Storage) Latest Snapdragon 778G 5G | sAMOLED 120Hz Display\"]")).click();
+	 String handle = driver.getWindowHandle();
+	  Set<String> handles = driver.getWindowHandles();
+	  handles.remove(handle);
+	  String newhandle = handles.iterator().next();
+	  driver.switchTo().window(newhandle);
+	  JavascriptExecutor js = (JavascriptExecutor) driver;
+	  js.executeScript("window.scrollBy(0,350)");
+	  driver.findElement(By.xpath("//*[@id=\"add-to-cart-button\"]")).click();
+	  Thread.sleep(10000);
+}
+ 
+ 
  
 
 }
