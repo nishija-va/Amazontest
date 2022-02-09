@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-08T13:28:42 IST" name="Suite" finished-at="2022-02-08T13:29:58 IST" duration-ms="76588">
+    <groups>
+    </groups>
+    <test started-at="2022-02-08T13:28:42 IST" name="Test" finished-at="2022-02-08T13:29:12 IST" duration-ms="30244">
+      <class name="Testngvox.Amazone">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Testngvox.Amazone@1d119efb]" started-at="2022-02-08T13:28:42 IST" name="setup" finished-at="2022-02-08T13:28:56 IST" duration-ms="14689" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signin()[pri:0, instance:Testngvox.Amazone@1d119efb]" started-at="2022-02-08T13:28:56 IST" name="signin" finished-at="2022-02-08T13:29:00 IST" duration-ms="3875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method signature="email(java.lang.String)[pri:1, instance:Testngvox.Amazone@1d119efb]" started-at="2022-02-08T13:29:00 IST" name="email" finished-at="2022-02-08T13:29:02 IST" duration-ms="1318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6282178113]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email -->
+        <test-method signature="pswrd(java.lang.String)[pri:2, instance:Testngvox.Amazone@1d119efb]" started-at="2022-02-08T13:29:02 IST" name="pswrd" finished-at="2022-02-08T13:29:02 IST" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[flipmeesho@456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pswrd -->
+        <test-method signature="search()[pri:3, instance:Testngvox.Amazone@1d119efb]" started-at="2022-02-08T13:29:02 IST" name="search" finished-at="2022-02-08T13:29:12 IST" duration-ms="9945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- Testngvox.Amazone -->
+    </test> <!-- Test -->
+    <test started-at="2022-02-08T13:29:12 IST" name="Edge Test" finished-at="2022-02-08T13:29:58 IST" duration-ms="46258">
+      <class name="Testngvox.Amazone">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Testngvox.Amazone@31c88ec8]" started-at="2022-02-08T13:29:12 IST" name="setup" finished-at="2022-02-08T13:29:31 IST" duration-ms="18719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signin()[pri:0, instance:Testngvox.Amazone@31c88ec8]" started-at="2022-02-08T13:29:31 IST" name="signin" finished-at="2022-02-08T13:29:37 IST" duration-ms="6863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+        <test-method signature="email(java.lang.String)[pri:1, instance:Testngvox.Amazone@31c88ec8]" started-at="2022-02-08T13:29:37 IST" name="email" finished-at="2022-02-08T13:29:39 IST" duration-ms="1582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6282178113]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email -->
+        <test-method signature="pswrd(java.lang.String)[pri:2, instance:Testngvox.Amazone@31c88ec8]" started-at="2022-02-08T13:29:39 IST" name="pswrd" finished-at="2022-02-08T13:29:39 IST" duration-ms="336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[flipmeesho@456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pswrd -->
+        <test-method signature="search()[pri:3, instance:Testngvox.Amazone@31c88ec8]" started-at="2022-02-08T13:29:39 IST" name="search" finished-at="2022-02-08T13:29:58 IST" duration-ms="18745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+      </class> <!-- Testngvox.Amazone -->
+    </test> <!-- Edge Test -->
+  </suite> <!-- Suite -->
+</testng-results>
