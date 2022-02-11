@@ -4,8 +4,8 @@
 
   <test thread-count="5" name="Test">
    <parameter name="browser" value="chrome"></parameter>
-   <parameter name="email" value="6282178113" />
-  <parameter name="password" value="flipmeesho@456" />
+   <parameter name="email" value="2345678978" />
+  <parameter name="password" value="huhuuh" />
    <classes>
       <class name="Testngvox.Amazone"/>
     </classes>
@@ -13,8 +13,8 @@
     
     <test name="Edge Test">
   <parameter name="browser" value="edge"></parameter>
-   <parameter name="email" value="6282178113" />
-  <parameter name="password" value="flipmeesho@456" />
+   <parameter name="email" value="2345678987" />
+  <parameter name="password" value="fvfggfgrg" />
   <classes>
       <class name="Testngvox.Amazone"/>
     </classes>
