@@ -25,7 +25,7 @@ public void setup(String browser) throws Exception
 if(browser.equalsIgnoreCase("chrome"))
 		{
 	//WebDriverManager.chromedriver().setup();
-	System.setProperty("webdriver.chrome.driver","C:\\Users\\nishija\\Desktop\\selenium\\chromedriver97\\chromedriver_win32\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\nishija\\Desktop\\selenium\\cgromedriver 98\\chromedriver_win32\\chromedriver.exe");
 	driver=new ChromeDriver();
 	driver.manage().window().maximize();
 	  driver.get(s);
@@ -67,23 +67,26 @@ else if(browser.equalsIgnoreCase("edge"))
   driver.findElement(By.xpath("(//input[@type='submit'])[1]")).click();
  }
  @Test(priority = 3 )
- public void search()
+ public void search() throws InterruptedException
  {
 	WebElement s= driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]"));
-	s.sendKeys("mobiles");
+	s.sendKeys("teddy");
 	s.submit();
+	Thread.sleep(1000);
 }
  @Test(priority = 4 )
  public void mob() throws InterruptedException
  {
-	 driver.findElement(By.xpath("//*[text()=\"Samsung Galaxy M52 5G (ICY Blue, 6GB RAM, 128GB Storage) Latest Snapdragon 778G 5G | sAMOLED 120Hz Display\"]")).click();
+	 JavascriptExecutor js = (JavascriptExecutor) driver;
+	  js.executeScript("window.scrollBy(0,350)");
+	 driver.findElement(By.xpath("//*[text()=\"Amazon Brand - Jam & Honey Brown Teddy 33 cm\"]")).click();
 	 String handle = driver.getWindowHandle();
 	  Set<String> handles = driver.getWindowHandles();
 	  handles.remove(handle);
 	  String newhandle = handles.iterator().next();
 	  driver.switchTo().window(newhandle);
-	  JavascriptExecutor js = (JavascriptExecutor) driver;
-	  js.executeScript("window.scrollBy(0,350)");
+	  JavascriptExecutor js1 = (JavascriptExecutor) driver;
+	  js1.executeScript("window.scrollBy(0,350)");
 	  driver.findElement(By.xpath("//*[@id=\"add-to-cart-button\"]")).click();
 	  Thread.sleep(10000);
 }

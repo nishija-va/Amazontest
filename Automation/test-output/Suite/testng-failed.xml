@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Edge Test(failed)">
-    <parameter name="browser" value="edge"/>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="flipmeesho@456"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="6282178113"/>
     <classes>
       <class name="Testngvox.Amazone">
         <methods>
+          <include name="signin"/>
           <include name="pswrd"/>
+          <include name="search"/>
+          <include name="mob"/>
+          <include name="email"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Testngvox.Amazone -->
+    </classes>
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Edge Test(failed)">
+    <parameter name="password" value="flipmeesho@456"/>
+    <parameter name="browser" value="edge"/>
+    <parameter name="email" value="6282178113"/>
+    <classes>
+      <class name="Testngvox.Amazone">
+        <methods>
+          <include name="signin"/>
+          <include name="pswrd"/>
+          <include name="search"/>
+          <include name="mob"/>
           <include name="email"/>
           <include name="setup"/>
         </methods>
