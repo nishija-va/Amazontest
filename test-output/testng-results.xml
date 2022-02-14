@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-14T15:42:56 IST" name="Suite" finished-at="2022-02-14T15:45:55 IST" duration-ms="178796">
+    <groups>
+    </groups>
+    <test started-at="2022-02-14T15:42:56 IST" name="Test" finished-at="2022-02-14T15:43:56 IST" duration-ms="59911">
+      <class name="Test.Hometest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Test.Hometest@1725dc0f]" started-at="2022-02-14T15:42:56 IST" name="setup" finished-at="2022-02-14T15:43:08 IST" duration-ms="12413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signtest()[pri:1, instance:Test.Hometest@1725dc0f]" started-at="2022-02-14T15:43:08 IST" name="signtest" finished-at="2022-02-14T15:43:16 IST" duration-ms="7576" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signtest -->
+        <test-method signature="emailtest(java.lang.String)[pri:2, instance:Test.Hometest@1725dc0f]" started-at="2022-02-14T15:43:16 IST" name="emailtest" finished-at="2022-02-14T15:43:18 IST" duration-ms="2120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6282178113]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailtest -->
+        <test-method signature="passtest(java.lang.String)[pri:3, instance:Test.Hometest@1725dc0f]" started-at="2022-02-14T15:43:18 IST" name="passtest" finished-at="2022-02-14T15:43:18 IST" duration-ms="200" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[flipmeesho@456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passtest -->
+        <test-method signature="searchest()[pri:4, instance:Test.Hometest@1725dc0f]" started-at="2022-02-14T15:43:18 IST" name="searchest" finished-at="2022-02-14T15:43:30 IST" duration-ms="11715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchest -->
+        <test-method signature="cartest()[pri:5, instance:Test.Hometest@1725dc0f]" started-at="2022-02-14T15:43:30 IST" name="cartest" finished-at="2022-02-14T15:43:56 IST" duration-ms="25811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartest -->
+      </class> <!-- Test.Hometest -->
+    </test> <!-- Test -->
+    <test started-at="2022-02-14T15:43:57 IST" name="Edge Test" finished-at="2022-02-14T15:45:55 IST" duration-ms="118109">
+      <class name="Test.Hometest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Test.Hometest@5e0826e7]" started-at="2022-02-14T15:43:57 IST" name="setup" finished-at="2022-02-14T15:44:13 IST" duration-ms="16810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signtest()[pri:1, instance:Test.Hometest@5e0826e7]" started-at="2022-02-14T15:44:13 IST" name="signtest" finished-at="2022-02-14T15:44:20 IST" duration-ms="6720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signtest -->
+        <test-method signature="emailtest(java.lang.String)[pri:2, instance:Test.Hometest@5e0826e7]" started-at="2022-02-14T15:44:20 IST" name="emailtest" finished-at="2022-02-14T15:44:22 IST" duration-ms="2201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6282178113]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailtest -->
+        <test-method signature="passtest(java.lang.String)[pri:3, instance:Test.Hometest@5e0826e7]" started-at="2022-02-14T15:44:22 IST" name="passtest" finished-at="2022-02-14T15:44:23 IST" duration-ms="194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[flipmeesho@456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passtest -->
+        <test-method signature="searchest()[pri:4, instance:Test.Hometest@5e0826e7]" started-at="2022-02-14T15:44:23 IST" name="searchest" finished-at="2022-02-14T15:44:59 IST" duration-ms="36491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchest -->
+        <test-method signature="cartest()[pri:5, instance:Test.Hometest@5e0826e7]" started-at="2022-02-14T15:44:59 IST" name="cartest" finished-at="2022-02-14T15:45:55 IST" duration-ms="55676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartest -->
+      </class> <!-- Test.Hometest -->
+    </test> <!-- Edge Test -->
+  </suite> <!-- Suite -->
+</testng-results>
